@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title h1 id="title">Survey Form</title>
+</head>
+
+<body>
+    <p id="description">
+        Please enter your user stories below!
+    </p>
+
+    <form id="survey-form">
+        <label for="name" id="name-label">Name:</label>
+        <input id="name" type="text" placeholder="Jane Doe" required>
+
+        </br>
+
+        <label for="email" id="email-label">Email:</label>
+        <input id="email" type="email" placeholder="JaneDoe123@gmail.com" required>
+
+        </br>
+
+        <label for="number" id="number-label">Phone Number:</label>
+        <input id="number" type="number" min="1000000000" max="9999999999" placeholder="4239998888">
+
+        </br>
+
+
+        <div id="radio">
+            <label for="radio" id="radio-label">How are we doing?</label>
+
+            </br>
+
+            <input type="radio" id="good">
+            <label for="good">Good</label>
+
+            </br>
+
+            <input type="radio" id="better">
+            <label for="better">Could be better</label>
+
+            </br>
+
+            <input type="radio" id="awful">
+            <label for="awful">Absolutely abysmal!</label>
+        </div>
+
+
+        <div id="checkbox">
+            <label for="checkbox" id="checkbox-label">How did you hear of us?</label>
+
+            </br>
+
+            <input type="checkbox" id="google" value="google">
+            <label for="google">Google</label>
+
+            </br>
+
+            <input type="checkbox" id="facebook" value="facebook">
+            <label for="facebook">Facebook</label>
+
+            </br>
+
+            <input type="checkbox" id="instagram" value="instagram">
+            <label for="instagram">Instagram</label>
+        </div>
+
+        </br>
+
+        <label for="comments">Enter Comments:</label>
+        <input type="text-area" id="comments">
+
+        </br>
+
+        <input type="button" id="submit">
+    </form>
+</body>
+
+</html>
