@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title h1 id="title">Survey Form</title>
+    <title>Survey Form</title>
 </head>
 
 <body>
+
+    <h1 id="title">SURVEY</h1>
     <p id="description">
         Please enter your user stories below!
     </p>
@@ -29,23 +31,28 @@
 
         </br>
 
+        <select name="gender" id="dropdown">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+
 
         <div id="radio">
             <label for="radio" id="radio-label">How are we doing?</label>
 
             </br>
 
-            <input type="radio" id="good">
+            <input type="radio" id="good" value="good" name="doing">
             <label for="good">Good</label>
 
             </br>
 
-            <input type="radio" id="better">
+            <input type="radio" id="better" value="better" name="doing">
             <label for="better">Could be better</label>
 
             </br>
 
-            <input type="radio" id="awful">
+            <input type="radio" id="awful" value="awful" name="doing">
             <label for="awful">Absolutely abysmal!</label>
         </div>
 
@@ -71,12 +78,11 @@
 
         </br>
 
-        <label for="comments">Enter Comments:</label>
-        <input type="text-area" id="comments">
+        <textarea for="comments" placeholder="Enter Comments Here"></textarea>
 
         </br>
 
-        <input type="button" id="submit">
+        <input type="submit" id="submit">
     </form>
 </body>
 
